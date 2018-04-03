@@ -2,6 +2,9 @@
 """
 Created on Wed Mar  7 14:37:54 2018
 
+对字符串进行分词，过滤停止词，并将结果写入文件当中
+读取之前写入的分词完毕的文件
+
 @author: Administrator
 """
 

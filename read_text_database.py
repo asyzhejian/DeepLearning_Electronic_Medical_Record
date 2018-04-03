@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 Created on Wed Mar  7 14:14:46 2018
+获取某路径下所有文件的名称及完整路径
 
 @author: luo yifu
 """
