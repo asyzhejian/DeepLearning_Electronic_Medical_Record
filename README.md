@@ -42,3 +42,13 @@ created by @luoyifu, @hejian
 ### 2.3 文本数据分析函数
 1. gensim_LDA.py
 使用LDA方法，分析文本库中的文档
+
+## 3. 其他资源
+* stopword.txt
+停止词列表
+* stopword_MedicalRecord.txt
+医学病历数据停止词列表
+* Dic_Medical_Record.txt
+医学术语词典
+使用LDA方法，分析文本库中的文档资源
+使用LDA方法，分析文本库中的文档
