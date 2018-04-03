@@ -2,6 +2,8 @@
 """
 Created on Wed Mar  7 14:14:46 2018
 
+使用LDA方法，分析文本库中的文档
+
 @author: luo yifu
 """
 from gensim import corpora, models
