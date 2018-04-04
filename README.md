@@ -52,3 +52,6 @@ created by @luoyifu, @hejian
 医学术语词典
 使用LDA方法，分析文本库中的文档资源
 使用LDA方法，分析文本库中的文档
+
+## 4. 其他文档介绍
+* Statment_EMR_medical_history.md: 介绍处理主诉、病史等数据的思想和处理方法
