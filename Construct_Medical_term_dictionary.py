@@ -6,10 +6,10 @@
 import re
 
 # 术语字典所在目录
-dic_filename = (u'C:/Users/Administrator/Desktop/神经网络与医疗数据/python code/Dic_Medical_Record.txt')
+dic_filename = (u'C:/Users/Administrator/Desktop/神经网络与医疗数据/supporting_files/Dic_Drug_Label.txt')
 
 # 新加入术语字典的字典目录
-dic_filename_new = (u'C:/Users/Administrator/Desktop/神经网络与医疗数据/python code/(精品)常用医学术语.txt')
+dic_filename_new = (u'C:/Users/Administrator/Desktop/神经网络与医疗数据/supporting_files/药品名称中英文对照表.txt')
 
 
 # 从filename字典中提取新的术语

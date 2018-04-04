@@ -7,7 +7,7 @@ Created on Wed Mar  7 14:14:46 2018
 """
 # 清洗文本的函数集合
 # 包括过滤多余的空格，过滤停止词
-
+ 
 
 # 清洗数据，除去多余的空格以及各种符号和编码
 def washdata(text_str):
@@ -38,3 +38,15 @@ def stopwordslist(filepath):
     stopwords = [line.strip() for line in io.open(
         filepath, 'r', encoding='gbk').readlines()]
     return stopwords
+
+
+# 如何处理无/否认的信息
+# 识别否定关键词“无/否认”，如果存在该关键词，删除该关键词所在条目
+def deny_rules(text_str):
+    import re
+    str_pattern = r'无|否认|正常'
+    pattern = re.compile(str_pattern)
+    if pattern.search(text_str):
+        return False
+    else:
+        return True
