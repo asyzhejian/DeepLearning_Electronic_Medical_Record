@@ -41,7 +41,7 @@ def stopwordslist(filepath):
 
 
 # 如何处理无/否认的信息
-# 识别否定关键词“无/否认”，如果存在该关键词，删除该关键词所在条目
+# 识别否定关键词“无/否认/正常”，如果存在该关键词，删除该关键词所在条目
 def deny_rules(text_str):
     import re
     str_pattern = r'无|否认|正常'
