@@ -72,6 +72,13 @@ https://astro.temple.edu/~tua87106/ddi.html
 
 超过700种药物发现与肝损伤相关[11]
 
+### 药物标签的主题建模
+背景：美国食品和药物管理局（FDA）批准的药品标签包含广泛的信息，从不良药物反应（ADR）到药物疗效，风险 - 收益考虑等等。但是，那用于描述这些信息的标签语言通常是含有模糊语义的自由文本描述，这对于从标签文本中检索有用的信息是一个很大的挑战以及跨药物比较分析的准确时尚。因此，这项任务在很大程度上依赖于手册由专家阅读全文，耗时耗力。方法：在这项研究中，一种具有无监督学习性质的新型文本挖掘方法称为话题建模应用于药物标签，目的是发现将相似安全问题和/或类似药物归为一类的“主题”治疗用途一起。本研究共使用794个FDA批准的药物标签。首先，三个标签每个药物标签的部分（即盒装警告，警告和注意事项，不良反应）均经过处理用于规范活动的医疗字典（MedDRA）将每个标签的自由文本转换为标准ADR条款。接下来，应用潜在狄利克雷分配（LDA）的主题建模方法生成100个主题，每一个都与基于概率分析分组在一起的一组药物相关联。最后，该疗法的功效主题建模基于已知的关于药物的治疗用途和安全性数据的信息进行评估。结果：结果表明按主题分组的药物与相同的安全问题和/或相关治疗用药有统计学意义（P <0.05）。确定的主题具有可以直接关联的独特背景特定不良事件（例如肝损伤或肾损伤）或治疗应用（例如全身使用的抗感染药）。我们还能够通过主题识别可能由特定药物引起的潜在不良事件。结论：主题建模在FDA药物标签上的成功应用证明了其潜力作为假设生成的效用意味着要推断概念的隐藏关系，例如在本研究中，药物安全和生物医学文献研究中的治疗用途。[13]
+
+
+### 电子病历的疾病早期预警
+Rothman指数：
+尽早发现即将发生的心脏或肺部停搏是医院试图提高护理质量的重要焦点。不幸的是，目前所有的预警系统都有高误报率。大多数系统基于修改的早期预警评分（MEWS）; 5个输入中有4个是生命体征。本研究的目的是比较MEWS与Rothman指数（RI）的准确性，Rothman指数是基于利用电子病历（EMR）额外数据的超额风险函数总和的患者敏锐度分数。回顾性地计算了32,472名患者就诊的MEWS和RI评分。护理评估是RI仅使用的一类EMR输入，在死亡前24小时显示出明显差异。 24小时死亡率的接受者操作特征曲线显示出优异的RI性能，c-统计分别为0.82和0.93。在MEWS触发警报的时候，我们确定了对应相同灵敏度的RI点，发现MEWS的阳性似然比（LR +）为7.8，RI为16.9，误报降低了53％。在相当于LR +的RI点上，MEWS的敏感性为RI的49％和77％，其中24小时内死亡的患者将多捕获54％。[14]
 
 
 ## 参考文献
@@ -91,3 +98,7 @@ analysis. Pediatrics 133, e54–63 (2014).
 [10] Xu Y, Dai Z, Chen F, et al. Deep Learning for Drug-Induced Liver Injury[J]. Journal of Chemical Information and Modeling, 2015, 55(10): 2085-2093.
 [11] Hoofnagle, J. H.; Serrano, J.; Knoben, J. E.; Navarro, V. J. Livertox: A Website on Drug-Induced Liver Injury. Hepatology 2013, 57, 873−874
 [12] Assis, D. N.; Navarro, V. J. Human Drug Hepatotoxicity: A Contemporary Clinical Perspective. Expert Opin. Drug Metab. Toxicol. 2009, 5, 463−473.
+[13] Bisgin H, Liu Z, Fang H, et al. Mining FDA drug labels using an unsupervised learning technique - topic modeling[J]. BMC Bioinformatics, 2011, 12(10): 1-8.
+[14] Finlay G D, Rothman M J, Smith R A, et al. Measuring the modified early warning score and the Rothman Index: Advantages of utilizing the electronic medical record in an early warning system[J]. Journal of Hospital Medicine, 2014, 9(2): 116-119.
+
+
